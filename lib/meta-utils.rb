@@ -1,5 +1,3 @@
-require 'facets'
-
 module Kernel
   alias_method :d, :binding
 end
@@ -11,7 +9,7 @@ class Binding
     variables = debug_str.split(',').map { |v| v.strip }
     
     variables.each do |var|
-      result = eval var
+      result = eval var, self
       str += "#{separator}#{var}=#{result.inspect.strip}"
       separator = ', '
     end

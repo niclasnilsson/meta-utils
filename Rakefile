@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "meta-utils"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Utilities for meta programming}
+    gem.description = %Q{Utilities for meta programming}
     gem.email = "niclas.nilsson@factor10.com"
     gem.homepage = "http://github.com/niclasnilsson/meta-utils"
     gem.authors = ["Niclas Nilsson"]
